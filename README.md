@@ -1,2 +1,2 @@
 # lokeshpulusu.github.io
-mkdir images
+# mkdir images
