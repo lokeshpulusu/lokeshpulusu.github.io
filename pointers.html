@@ -11,7 +11,77 @@
         <!-- Load external JavaScript -->
         <div>
             <h3>Pointers:</h3></br>
-               A pointer is a variable that stores the memory address of another variable as its value.
+ <p>
+  1.what is a pointer.
+A)it is a holder.
+it can hold the address.
+A pointer is really just a variable that contains an adress.
+pointer just like any other variable it has type! means, a pointer can 
+be integer pointer or float pointer.(It has to hold an address, but, adress of some type
+of variable.
+2.what is the size of an pointer?what is the size of an integer pointer,
+float pointer and character pointer.
+A)
+it is a holder to hold the address. size of the pointer is consistent for any data type
+it varies with architecture.
+4 bytes for 32 bit architecture.
+8 bytes for 32 bit architecture.
+
+3. What is a NULL Pointer?
+
+A NULL pointer is a special pointer that points nowhere. That is no other pointer will be 
+equal to NULL Pointer.
+The most peasier and straight forward way to get a NULL pointer in your program is use to 
+the predefined constant NULL, which is defined by several standard header files including 
+<stdio.h> <stdlib.h> and <string.h>
+
+//NULL Pointer
+
+#include<stdio.h> 
+int main()
+{
+int*p;
+p=NULL;
+printf("\n the value of P is %u,p);
+return 0;
+}
+
+o/p: 
+the value of P is 0
+
+we can assign in these ways as well!
+Int *ip=NULL;
+int *ip=0;
+
+4. what is a void pointer? what is its limitation?
+A)
+
+A void pointer is a special type of pointer.
+it can point to any datatype, from an integer value to float to anything!
+its sole limitation is that it can be referenced directly. (* cannot be used on them as the 
+length is always un determined).
+Therefore type casting is required must be used to turn the void pointer to a pointer of a 
+concrete data type to which we can refer. An example would be helpful.
+
+#include<stdio.h>
+int main()
+{
+int a=5;
+double b=3.233;
+void *vp;//void pointer
+vp=&a;
+printf("\n b=%f",*((int*)vp);
+vp=&b;
+printf("\n b=%f",*((double*)vp);
+return 0;
+}
+O/P
+
+a=5
+b3.233000;
+ </p>
+
+              
         </div>
     </body>
 </html>
